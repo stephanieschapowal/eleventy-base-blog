@@ -1,0 +1,159 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Stephanie Schapowal">
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/post.css" />
+	<!-- <link rel="stylesheet" href="/css/typography.css" /> -->
+	<title></title>
+
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#00ff00">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- ga -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-101165867-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body class="p-work">
+
+	<header>
+		<a href="/" class="header-pill">Stephanie Schapowal</a>
+	</header>
+
+	<div class="project-header">
+		<h1>MoMA's Digital Visitor Guide and Map</h1>
+
+		<p class="project-description">
+			Harnessing MoMA’s collection data to improve wayfinding for visitors
+		</p>
+
+		
+		<div class="post-header-image">
+			<img src="/img/moma-dvg/dvg-header.png" alt="MoMA's Digital Visitor Guide and Map">
+		</div>
+		
+	</div>
+
+	<main class="post">
+		<h4>Background</h4>
+<h3>Visitors are overwhelmed by MoMA’s scale, and aren’t sure where to start.</h3>
+<p>Upon reopening in 2020, MoMA’s digital product team released an MVP digital visitor guide (or DVG), meant to replace onsite resources like paper maps, rentable audio devices, and volunteer guides. Over one million visitors use the DVG each year, and wayfinding is reported as our visitors’ biggest challenge.</p>
+<p>The original DVG map was a link to a PDF. Unsurprisingly, our users found this difficult to read and navigate on their phones. The graphic design team also found it tedious to update, and visitor engagement still had to field hundreds of questions a day. We had the data users were looking for, like artwork locations and whether an exhibition is on view, but it wasn’t centralized for the onsite visitor.</p>
+<p><img src="/img/moma-dvg/dvg-before.png" alt="Three phone mockups displaying MoMA's digital visitor guide landing page, the landing page with map accordion open, and the PDF map"></p>
+<p class="caption">MoMA's digital PDF map in 2023</p>
+<h4>My role</h4>
+<p>I collaborated with another designer on research and initial wireframing for the new map, and led high fidelity design. Along with our UX research fellow, we ran in-person usability testing, and I worked closely with our developer to perform visual QA and perfect the interactions.</p>
+<h4>Approach</h4>
+<h3>Create an interactive map to serve our visitors’ distinct needs, while minimizing the demands on our staff</h3>
+<p>MoMA’s visitors typically fall into two groups—those visiting for the first time, and New Yorkers or members who have visited before. First-timers are typically tourists who want to see the whole museum, and consider MoMA to be a landmark. Repeat visitors are often drawn to visit by a specific exhibition or artwork. An image-forward directory with a more modern map would be essential in serving both of these groups.</p>
+<p>moma.org runs on our internal CMS and the collection database TMS, meaning internal teams only need to update one entry in order to populate the exhibition page, homepage, and onsite screens. Why couldn’t the visitor guide also run on this data? This ensures that on view data for exhibitions and artworks, as well as their locations, exhibition run dates, locations are always up to date.</p>
+<p>A common pattern is for users to search for artworks and artists using our global site search. Previously, artworks that were on view weren't given priority placement. On artist pages, we pushed artworks that were on view to the top of the list, and on artworks pages, we linked out to the gallery where the artwork was located. This made it much easier for visitors to use our site to find specific artworks and artist they wanted to see.</p>
+<div class="carousel">
+  <div class="carousel-track">
+    <div class="carousel-slide">
+      <img src="/img/moma-dvg/dvg-carousel-beforeafter.png" alt="Side-by-side comparison of the original MoMA PDF map and the new interactive map on mobile. The PDF version shows all floors stacked vertically in a dense, hard-to-read layout. The new version shows a zoomable floor plan with floor selector tabs and an "On this floor" section listing exhibitions below.">
+      <p class="caption">The interactive map allowed visitors to easily select floors rather than scrolling through a PDF. Visitors could tap on the map to explore exhibitions, or discover them in the “On this floor” listings.</p>
+    </div>
+    <div class="carousel-slide">
+      <img src="/img/moma-dvg/dvg-carousel-Onthisfloor.png" alt="Two mobile screens of the MoMA visitor guide map showing floor 5 selected. Below the interactive floor plan, an "On this floor" section lists collection galleries with artwork thumbnails tagged "Now on view," artist names, and gallery numbers, followed by amenities like the Terrace 5 Bar.">
+      <p class="caption">We had artwork locations and exhibition details in our CMS already, but it wasn’t centralized in one place online for the onsite visitor. The “On this floor” section centralized this information alongside an interactive map.</p>
+    </div>
+    <div class="carousel-slide">
+      <img src="/img/moma-dvg/dvg-carousel-overlay.png" alt="Two mobile screens showing a gallery detail overlay on the MoMA map. A panel slides up over the map for Gallery 202, showing the title "Mike Kelley's Deodorized Central Mass with Satellites," a brief description, artworks on view with thumbnails, and a list of artists in the gallery.">
+      <p class="caption">In our old guide, galleries were often represented by one image—if a visitor didn’t resonate with that image, they were less likely to engage. The overlay for each gallery gave visitors more artworks and artists to explore.</p>
+    </div>
+    <div class="carousel-slide">
+      <img src="/img/moma-dvg/dvg-carousel-links.png" alt="Three mobile screens showing how on-view artworks are surfaced across moma.org: a Works search results page with an "On view" label and gallery number on a Frida Kahlo painting, an artwork detail page with a highlighted "On view" location link reading "MoMA, Floor 5, 517," and the visitor guide map with Gallery 517 "Surrealist Objects" open in an overlay.">
+      <p class="caption">Throughout the site and search listings, we prioritized artworks that are on view, and linked locations of galleries, exhibitions, and artworks to the map.</p>
+    </div>
+  </div>
+  <div class=carousel-controls>
+   <button class="carousel-prev" aria-label="Previous slide">
+    <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0711 20.3431L8.70718 26.7071C8.31665 27.0976 7.68349 27.0976 7.29296 26.7071L0.929002 20.3431C0.538477 19.9526 0.538477 19.3195 0.929002 18.9289C1.31953 18.5384 1.95269 18.5384 2.34322 18.9289L7.00007 23.5858L7.00007 0L9.00007 8.74228e-08L9.00007 23.5858L13.6569 18.9289C14.0474 18.5384 14.6806 18.5384 15.0711 18.9289C15.4617 19.3195 15.4617 19.9526 15.0711 20.3431Z" fill="#656377"/>
+</svg>
+</button>
+  <div class="carousel-dots">
+    <button class="carousel-dot active" aria-label="Slide 1"></button>
+    <button class="carousel-dot" aria-label="Slide 2"></button>
+    <button class="carousel-dot" aria-label="Slide 3"></button>
+    <button class="carousel-dot" aria-label="Slide 4"></button>
+  </div>
+  <button class="carousel-next" aria-label="Next slide">
+        <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0711 20.3431L8.70718 26.7071C8.31665 27.0976 7.68349 27.0976 7.29296 26.7071L0.929002 20.3431C0.538477 19.9526 0.538477 19.3195 0.929002 18.9289C1.31953 18.5384 1.95269 18.5384 2.34322 18.9289L7.00007 23.5858L7.00007 0L9.00007 8.74228e-08L9.00007 23.5858L13.6569 18.9289C14.0474 18.5384 14.6806 18.5384 15.0711 18.9289C15.4617 19.3195 15.4617 19.9526 15.0711 20.3431Z" fill="#656377"/>
+</button>
+  </div>
+</div>
+<h4>Outcomes</h4>
+<h3>Our updates resulted in much higher engagement with the map and other moma.org content.</h3>
+<p>Following our updates, the average DVG user session duration increased from 12 to 28 seconds (2.3x). Our lobby staff has reported that the map integration with the rest of the site has empowered users to find artworks themselves, rather than asking staff.</p>
+<p>Visitors are also engaging more with the rest of moma.org. We also saw traffic increase to our Artwork, Exhibition, and Collection gallery pages.</p>
+<h4>Team</h4>
+<p>Madhav Tankha (assistant director of UX), Terrance Rose (software developer), Debora Domass (product manager), Tharani Prabu (research fellow)</p>
+</div>
+
+
+
+		
+		<div class="related-posts">
+			<h2 class="more-projects">More projects</h2>
+			<ul class="postlist">
+
+				
+
+				
+
+				<li class="content-card">
+					<a class="project-title" href="/moma-ticketing/">
+						<img class="card-image" src="/img/moma-ticketing/thumbnail-Ticketing.png">
+
+						MoMA's Online Ticketing
+
+					</a>
+					<p class="card-caption">Streamlining the ticket-buying process and cutting time to purchase in half</p>
+				</li>
+				
+
+				<li class="content-card">
+					<a class="project-title" href="/sweetpea/">
+						<img class="card-image" src="/img/bh-sp/thumbnail-SP.jpg">
+
+						Sweet Pea brand & dating app
+
+					</a>
+					<p class="card-caption">A dating app that recruits your friends to play wingman</p>
+				</li>
+				
+			</ul>
+		</div>
+		
+	</main>
+	<script src="/js/carousel.js"></script>
+</body>
+
+</html>
